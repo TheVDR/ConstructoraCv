@@ -1,0 +1,356 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:blueviolet; }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+
+#somos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#proyectos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#proyectos .container {
+    padding: 150px 12px;
+}
+
+#proyectos h2 {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#proyectos .carta {
+    background-position: center;
+    background-size: cover;
+    padding: 100px 50px;
+    margin: 30px;
+    border-radius: 10px;
+}  
+
+.proyecto-techo {
+    background-image: url("media/techo.jpg");
+}
+
+.proyecto-piso {
+    background-image: url("media/piso.jpg");
+}
+
+.proyecto-casa2 {
+    background-image: url("media/casa2.jpg");
+}
+
+.proyecto-bano {
+    background-image: url("media/baño2.jpg");
+}
+
+.proyecto-sala {
+    background-image: url("media/sala.jpg");
+}
+
+.proyecto-cocina {
+    background-image: url("media/cocina.jpg");
+}
+
+.proyecto-piso2 {
+    background-image: url("media/piso2.jpg");
+}
+
+.proyecto-gradas{
+    background-image: url("media/gradas.jpg");
+}
+
+.proyecto-fachada {
+    background-image: url("media/fachada.jpg");
+}
+
+.proyecto-balcon {
+    background-image: url("media/balcon.jpg");
+}
+
+
+#servicios .container{
+    text-align: center ;
+    padding: 250px 12px;
+}
+
+#servicios li{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: flex-start;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#contacto a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+#contacto a:hover{
+    color: blueviolet;
+}
+
+#contacto h2{
+    font-size: 7vw;
+    text-align: center;
+}
+
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos h2{
+        margin-top: 0px;
+    }
+
+    #somos .img-container{
+        background-image: url("media/casa.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #proyectos .proyec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #proyectos h2{
+        font-size: 4em;
+    }
+
+    #proyectos .carta{
+        padding: 200px;
+        background-size: 400px 400px;
+        background-repeat: no-repeat;
+        flex:0 0 calc(30% - 10px);
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+.proyecto-techo {
+    background-image: url("media/techo.jpg");
+}
+
+.proyecto-piso {
+    background-image: url("media/piso.jpg");
+}
+
+.proyecto-casa2 {
+    background-image: url("media/casa2.jpg");
+}
+
+.proyecto-bano {
+    background-image: url("media/baño2.jpg");
+}
+
+.proyecto-sala {
+    background-image: url("media/sala.jpg");
+}
+
+.proyecto-cocina {
+    background-image: url("media/cocina.jpg");
+}
+
+.proyecto-piso2 {
+    background-image: url("media/piso2.jpg");
+}
+
+.proyecto-gradas{
+    background-image: url("media/gradas.jpg");
+}
+
+.proyecto-fachada {
+    background-image: url("media/fachada.jpg");
+}
+
+.proyecto-balcon {
+    background-image: url("media/balcon.jpg");
+}
+
+    #servicios{
+        background-image: url("media/portada.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #servicios .container{
+        text-align: initial;
+    }
+
+    #servicios ul{
+        margin-left: 100px;
+    }
+
+    #contacto h2{
+        text-align: center;
+        font-size: 4em;
+    }
+
+    #contacto .container{
+        height: 200px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    footer .container{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    #servicios{
+        background-position-x: calc(100vw - 800px);
+    }
+}
